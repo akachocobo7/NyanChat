@@ -308,7 +308,8 @@ function onCatButtonClick(e){
   e.preventDefault();
   
   if(checkSignedInWithMessage()) {
-    saveMessage("にゃーん");
+    const words = ["にゃーん", "にゃーーん", "にゃーん", "にゃ〜ん", "にゃーん", "にゃーん(ฅ^･ω･^ ฅ)", "にゃーん"];
+    saveMessage(words[Math.floor(Math.random() * words.length)]);
   }
 }
 
